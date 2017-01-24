@@ -5,7 +5,7 @@ module.exports = {
     './index.js'
   ],
   output: {
-    path: './build',
+    path: './',
     filename: 'index.bundle.prod.js'
   },
   plugins: [
