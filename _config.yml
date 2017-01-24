@@ -1,1 +1,1 @@
-source: ./build/
+exclude: [actions.js, fonts.css, index.bundle.js, index.test.html, index.js, LeftLogo.js, package.json, reducers.js, RightScroll.js, styles.scss, webpack.config.js, webpack.config.prod.js]
