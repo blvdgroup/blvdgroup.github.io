@@ -6,7 +6,7 @@ import * as actions from './actions'
 
 import { right, section } from './styles.scss'
 
-export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo }) => {
+export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, setFont }) => {
   return (
     <div className={right} style={{ backgroundColor: color }}>
       <div className={section} style={{ backgroundColor: color }}>
@@ -109,4 +109,4 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
-export default connect(mapStateToProps)(RightScroll)
+export default connect(mapStateToProps, mapDispatchToProps)(RightScroll)
