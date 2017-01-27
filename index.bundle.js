@@ -23968,7 +23968,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  margin: 0;\n  height: 100%;\n  width: 100%; }\n\n* {\n  box-sizing: border-box; }\n\n._2dDCKqal9FhD-TLp4hF63D {\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n._1Zw5wI3ZRJgqn0AIMiU-pZ, ._2oTxJV4W3RLng-IJA0EK8P {\n  width: 50%;\n  height: 100%; }\n\n._1Zw5wI3ZRJgqn0AIMiU-pZ {\n  position: fixed;\n  left: 0; }\n  ._1Zw5wI3ZRJgqn0AIMiU-pZ h1 {\n    position: relative;\n    top: 50%;\n    text-align: center;\n    transform: translateY(-50%);\n    font-size: 144pt;\n    margin: 0;\n    color: black;\n    transition: color 0.1s ease-in; }\n\n._2oTxJV4W3RLng-IJA0EK8P {\n  position: absolute;\n  right: 0;\n  top: 0;\n  background-color: black;\n  transition: background-color 0.1s ease-in; }\n\n._1rSElDO9l2m2SvFBcBn7bp {\n  height: 100vh;\n  width: 100%;\n  background-color: black;\n  padding: 0 72pt;\n  margin: 0;\n  display: inline-block;\n  transition: background-color 0.1s ease-in; }\n  ._1rSElDO9l2m2SvFBcBn7bp > * {\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n    color: white; }\n    ._1rSElDO9l2m2SvFBcBn7bp > * h2 {\n      margin: 0;\n      font-size: 72pt; }\n    ._1rSElDO9l2m2SvFBcBn7bp > * h3 {\n      margin: 0;\n      font-size: 48pt; }\n    ._1rSElDO9l2m2SvFBcBn7bp > * p {\n      margin: 24pt 0 0 0;\n      font-size: 24pt; }\n", ""]);
+	exports.push([module.id, "body {\n  margin: 0;\n  height: 100%;\n  width: 100%; }\n\n* {\n  box-sizing: border-box; }\n\na {\n  text-decoration: underline;\n  color: white;\n  background-color: rgba(255, 255, 255, 0);\n  transition: background-color 0.1s ease-in; }\n\na:hover {\n  background-color: white;\n  color: black; }\n\n._2dDCKqal9FhD-TLp4hF63D {\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n._1Zw5wI3ZRJgqn0AIMiU-pZ, ._2oTxJV4W3RLng-IJA0EK8P {\n  width: 50%;\n  height: 100%; }\n\n._1Zw5wI3ZRJgqn0AIMiU-pZ {\n  position: fixed;\n  left: 0; }\n  ._1Zw5wI3ZRJgqn0AIMiU-pZ h1 {\n    position: relative;\n    top: 50%;\n    text-align: center;\n    transform: translateY(-50%);\n    font-size: 144pt;\n    margin: 0;\n    color: black;\n    transition: color 0.1s ease-in; }\n\n._2oTxJV4W3RLng-IJA0EK8P {\n  position: absolute;\n  right: 0;\n  top: 0;\n  background-color: black;\n  transition: background-color 0.1s ease-in; }\n\n._1rSElDO9l2m2SvFBcBn7bp {\n  height: 100vh;\n  width: 100%;\n  background-color: black;\n  padding: 0 72pt;\n  margin: 0;\n  display: inline-block;\n  transition: background-color 0.1s ease-in; }\n  ._1rSElDO9l2m2SvFBcBn7bp > * {\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n    color: white; }\n    ._1rSElDO9l2m2SvFBcBn7bp > * h2 {\n      margin: 0;\n      font-size: 72pt; }\n    ._1rSElDO9l2m2SvFBcBn7bp > * h3 {\n      margin: 0;\n      font-size: 48pt; }\n    ._1rSElDO9l2m2SvFBcBn7bp > * p {\n      margin: 24pt 0 0 0;\n      font-size: 24pt; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24504,7 +24504,11 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Go to the site now.'
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://resist.social' },
+	              'Go to the site now.'
+	            )
 	          )
 	        )
 	      )
@@ -24537,7 +24541,11 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Go to the site now.'
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://hoot.rocks' },
+	              'Go to the site now.'
+	            )
 	          )
 	        )
 	      )
@@ -24570,7 +24578,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Go to the site now.'
+	            'Site coming soon.'
 	          )
 	        )
 	      )
@@ -24603,7 +24611,11 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Go to the site now.'
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/blvdgroup/traffic' },
+	              'View the repo now.'
+	            )
 	          )
 	        )
 	      )
