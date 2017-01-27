@@ -6,14 +6,14 @@ import * as actions from './actions'
 
 import { right, section } from './styles.scss'
 
-export const RightScroll = ({ color }) => {
+export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo }) => {
   return (
     <div className={right} style={{ backgroundColor: color }}>
       <div className={section} style={{ backgroundColor: color }}>
         <VisibilitySensor scrollDelay={0} intervalDelay={250} onChange={(v) => {
           if (v) {
-            store.dispatch(actions.setColor('#000000'))
-            store.dispatch(actions.scrambleLogo())
+            setColor('#000000')
+            scrambleLogo()
           }
         }}>
           <div>
@@ -33,9 +33,9 @@ export const RightScroll = ({ color }) => {
       <div className={section} style={{ fontFamily: 'raleway', backgroundColor: color }}>
         <VisibilitySensor onChange={(v) => {
           if (v) {
-            store.dispatch(actions.setColor('#7d0e0e'))
-            store.dispatch(actions.unscrambleLogo())
-            store.dispatch(actions.setFont('raleway'))
+            setColor('#7d0e0e')
+            unscrambleLogo()
+            setFont('raleway')
           }
         }}>
           <div>
@@ -48,9 +48,9 @@ export const RightScroll = ({ color }) => {
       <div className={section} style={{ fontFamily: 'proxima-nova', backgroundColor: color }}>
         <VisibilitySensor onChange={(v) => {
           if (v) {
-            store.dispatch(actions.setColor('#217dfa'))
-            store.dispatch(actions.unscrambleLogo())
-            store.dispatch(actions.setFont('proxima-nova'))
+            setColor('#217dfa')
+            unscrambleLogo()
+            setFont('proxima-nova')
           }
         }}>
           <div>
@@ -63,9 +63,9 @@ export const RightScroll = ({ color }) => {
       <div className={section} style={{ fontFamily: 'museo-slab', backgroundColor: color }}>
         <VisibilitySensor onChange={(v) => {
           if (v) {
-            store.dispatch(actions.setColor('#b60ff4'))
-            store.dispatch(actions.unscrambleLogo())
-            store.dispatch(actions.setFont('museo-slab'))
+            setColor('#b60ff4')
+            unscrambleLogo()
+            setFont('museo-slab')
           }
         }}>
           <div>
@@ -78,9 +78,9 @@ export const RightScroll = ({ color }) => {
       <div className={section} style={{ fontFamily: 'montserrat', backgroundColor: color }}>
         <VisibilitySensor onChange={(v) => {
           if (v) {
-            store.dispatch(actions.setColor('#edc54c'))
-            store.dispatch(actions.unscrambleLogo())
-            store.dispatch(actions.setFont('montserrat'))
+            setColor('#edc54c')
+            unscrambleLogo()
+            setFont('montserrat')
           }
         }}>
           <div>
@@ -97,6 +97,15 @@ export const RightScroll = ({ color }) => {
 function mapStateToProps (state) {
   return {
     color: state.color.current
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    setColor: (c) => dispatch(actions.setColor(c)),
+    scrambleLogo: () => dispatch(actions.scrambleLogo()),
+    unscrambleLogo: () => dispatch(actions.unscrambleLogo()),
+    setFont: (f) => dispatch(actions.setFont(f))
   }
 }
 
