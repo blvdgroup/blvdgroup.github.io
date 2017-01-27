@@ -41,7 +41,7 @@ export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, set
           <div>
             <h2>resist!</h2>
             <p>Peer to peer networking built for peaceful protest.</p>
-            <p>Go to the site now.</p>
+            <p><a href="http://resist.social">Go to the site now.</a></p>
           </div>
         </VisibilitySensor>
       </div>
@@ -56,7 +56,7 @@ export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, set
           <div>
             <h2>hoot</h2>
             <p>Reimagining the college application process.</p>
-            <p>Go to the site now.</p>
+            <p><a href="http://hoot.rocks">Go to the site now.</a></p>
           </div>
         </VisibilitySensor>
       </div>
@@ -71,7 +71,7 @@ export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, set
           <div>
             <h2>serif</h2>
             <p>The news of the hour, distilled to the extreme.</p>
-            <p>Go to the site now.</p>
+            <p>Site coming soon.</p>
           </div>
         </VisibilitySensor>
       </div>
@@ -86,7 +86,7 @@ export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, set
           <div>
             <h2>traffic</h2>
             <p>An easy way to make beautiful, open web apps.</p>
-            <p>Go to the site now.</p>
+            <p><a href="https://github.com/blvdgroup/traffic">View the repo now.</a></p>
           </div>
         </VisibilitySensor>
       </div>
