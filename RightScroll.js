@@ -23,25 +23,40 @@ export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, set
               <span style={{ fontFamily: 'museo-slab' }}>d thi</span>
               <span style={{ fontFamily: 'montserrat' }}>ngs.</span>
             </h3>
-            <h3 style={{ fontFamily: 'raleway' }}>resist!</h3>
-            <h3 style={{ fontFamily: 'proxima-nova' }}>hoot</h3>
-            <h3 style={{ fontFamily: 'museo-slab' }}>serif</h3>
             <h3 style={{ fontFamily: 'montserrat' }}>traffic</h3>
+            <h3 style={{ fontFamily: 'museo-slab' }}>chi</h3>
+            <h3 style={{ fontFamily: 'proxima-nova' }}>hoot</h3>
+            <h3 style={{ fontFamily: 'raleway' }}>resist!</h3>
           </div>
         </VisibilitySensor>
       </div>
-      <div className={section} style={{ fontFamily: 'raleway', backgroundColor: color }}>
+      <div className={section} style={{ fontFamily: 'montserrat', backgroundColor: color }}>
         <VisibilitySensor onChange={(v) => {
           if (v) {
-            setColor('#7d0e0e')
+            setColor('#edc54c')
             unscrambleLogo()
-            setFont('raleway')
+            setFont('montserrat')
           }
         }}>
           <div>
-            <h2>resist!</h2>
-            <p>Peer to peer networking built for peaceful protest.</p>
-            <p><a href="http://resist.social">Go to the site now.</a></p>
+            <h2>traffic</h2>
+            <p>An easy way to make beautiful, open web apps.</p>
+            <p><a href="https://github.com/blvdgroup/traffic">View the repo now.</a></p>
+          </div>
+        </VisibilitySensor>
+      </div>
+      <div className={section} style={{ fontFamily: 'museo-slab', backgroundColor: color }}>
+        <VisibilitySensor onChange={(v) => {
+          if (v) {
+            setColor('#00aaac')
+            unscrambleLogo()
+            setFont('museo-slab')
+          }
+        }}>
+          <div>
+            <h2>chi</h2>
+            <p>Password management without trust.</p>
+            <p>Site coming soon.</p>
           </div>
         </VisibilitySensor>
       </div>
@@ -60,33 +75,18 @@ export const RightScroll = ({ color, setColor, scrambleLogo, unscrambleLogo, set
           </div>
         </VisibilitySensor>
       </div>
-      <div className={section} style={{ fontFamily: 'museo-slab', backgroundColor: color }}>
+      <div className={section} style={{ fontFamily: 'raleway', backgroundColor: color }}>
         <VisibilitySensor onChange={(v) => {
           if (v) {
-            setColor('#b60ff4')
+            setColor('#7d0e0e')
             unscrambleLogo()
-            setFont('museo-slab')
+            setFont('raleway')
           }
         }}>
           <div>
-            <h2>serif</h2>
-            <p>The news of the hour, distilled to the extreme.</p>
-            <p>Site coming soon.</p>
-          </div>
-        </VisibilitySensor>
-      </div>
-      <div className={section} style={{ fontFamily: 'montserrat', backgroundColor: color }}>
-        <VisibilitySensor onChange={(v) => {
-          if (v) {
-            setColor('#edc54c')
-            unscrambleLogo()
-            setFont('montserrat')
-          }
-        }}>
-          <div>
-            <h2>traffic</h2>
-            <p>An easy way to make beautiful, open web apps.</p>
-            <p><a href="https://github.com/blvdgroup/traffic">View the repo now.</a></p>
+            <h2>resist!</h2>
+            <p>Peer to peer networking built for peaceful protest.</p>
+            <p><a href="http://resist.social">Go to the site now.</a></p>
           </div>
         </VisibilitySensor>
       </div>
